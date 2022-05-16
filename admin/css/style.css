@@ -1,0 +1,92 @@
+.datatable-container {
+  padding: 40px;
+}
+.plugin-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* plugin-modal Content/Box */
+.plugin-modal-content {
+  background-color: #fefefe;
+  margin: 12% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The PluginClose Button */
+.PluginClose {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.PluginClose:hover,
+.PluginClose:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.plugin-modal form {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+
+.plugin-modal input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.plugin-modal .form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.datatable-container button {
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.datatable-container button:active {
+  transform: scale(0.95);
+}
+
+.datatable-container button:focus {
+  outline: none;
+}
+#myPluginBtn {
+  cursor: pointer;
+  float: right;
+  margin-bottom: 17px;
+}
